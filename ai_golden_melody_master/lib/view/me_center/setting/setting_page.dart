@@ -241,7 +241,7 @@ class SettingPage extends StatelessWidget {
               ),
 
               ///邀请码
-              _inviteCode(),
+              // _inviteCode(),
 
               ///
               Container(

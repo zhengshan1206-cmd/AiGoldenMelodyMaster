@@ -24,12 +24,12 @@ class DataService {
         final iosInfo = await DeviceInfoPlugin().iosInfo;
         device = iosInfo.utsname.machine;
       }
-      params['device'] = device;
-      UmengCommonSdk.onEvent(eventName, params);
     }
+    params['device'] = device;
 
     ///正式环境才上报
     // if(Environment.PRODUCTION.domain == APIs.apiPrefix) {
+    UmengCommonSdk.onEvent(eventName, params);
     // }
   }
 }

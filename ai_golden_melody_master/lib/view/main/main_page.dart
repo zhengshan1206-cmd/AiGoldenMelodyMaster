@@ -63,11 +63,11 @@ class MainPage extends StatelessWidget {
               assets: Assets.tabAiWriteMusicIcon,
               selectedAssets: Assets.selectedTabAiWriteMusicIcon,
             ),
-            tabBarItem(
-              label: '赚钱',
-              assets: Assets.tabEarnMoney,
-              selectedAssets: Assets.selectedTabEarnMoney,
-            ),
+            // tabBarItem(
+            //   label: '赚钱',
+            //   assets: Assets.tabEarnMoney,
+            //   selectedAssets: Assets.selectedTabEarnMoney,
+            // ),
             tabBarItem(
               label: '我的',
               assets: Assets.tabMeIcon,

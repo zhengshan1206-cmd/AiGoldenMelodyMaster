@@ -77,7 +77,7 @@ class MainController extends GetxController {
   initData() {
     tabBarPages.add(PublishPage());
     tabBarPages.add(const AiWriteMusicPage());
-    tabBarPages.add(const ShareSalesPage());
+    // tabBarPages.add(const ShareSalesPage());
     tabBarPages.add(const MeCenterPage());
     tabChanged(index: 1);
 
@@ -114,27 +114,27 @@ class MainController extends GetxController {
       return;
     }
 
-    if (index == 2) {
-      bool isLogin = Get.find<LaunchController>().isLogin;
-      if (!isLogin) {
-        Get.find<LaunchController>().login(
-            loginSuccess: () {
-              currentIndex = index;
-              update();
-              if (index == 2) {
-                bool isShareSalesController =
-                    Get.isRegistered<ShareSalesController>();
-                if (!isShareSalesController) {
-                  Get.lazyPut<ShareSalesController>(
-                      () => ShareSalesController());
-                }
-                Get.find<ShareSalesController>().getData();
-              }
-            },
-            source: "earn_money_btn");
-        return;
-      }
-    }
+    // if (index == 2) {
+    //   bool isLogin = Get.find<LaunchController>().isLogin;
+    //   if (!isLogin) {
+    //     Get.find<LaunchController>().login(
+    //         loginSuccess: () {
+    //           currentIndex = index;
+    //           update();
+    //           if (index == 2) {
+    //             bool isShareSalesController =
+    //                 Get.isRegistered<ShareSalesController>();
+    //             if (!isShareSalesController) {
+    //               Get.lazyPut<ShareSalesController>(
+    //                   () => ShareSalesController());
+    //             }
+    //             Get.find<ShareSalesController>().getData();
+    //           }
+    //         },
+    //         source: "earn_money_btn");
+    //     return;
+    //   }
+    // }
 
     if (currentIndex != index) {
       currentIndex = index;
@@ -154,15 +154,15 @@ class MainController extends GetxController {
       Get.find<AiWriteMusicController>().loadAiMusicSongRights();
     }
 
-    if (index == 2) {
-      bool isShareSalesController = Get.isRegistered<ShareSalesController>();
-      if (!isShareSalesController) {
-        Get.lazyPut<ShareSalesController>(() => ShareSalesController());
-      }
-      Get.find<ShareSalesController>().getData();
-    }
+    // if (index == 2) {
+    //   bool isShareSalesController = Get.isRegistered<ShareSalesController>();
+    //   if (!isShareSalesController) {
+    //     Get.lazyPut<ShareSalesController>(() => ShareSalesController());
+    //   }
+    //   Get.find<ShareSalesController>().getData();
+    // }
 
-    if (index == 3) {
+    if (index == 2) {
       bool isVipPurchaseController = Get.isRegistered<VipPurchaseController>();
       if (!isVipPurchaseController) {
         Get.put(VipPurchaseController());
