@@ -1,0 +1,5 @@
+// 项目配置文件
+ext {
+    // 应用包名
+    applicationId = 'com.beiyinhuanyue.jinqds'
+} 

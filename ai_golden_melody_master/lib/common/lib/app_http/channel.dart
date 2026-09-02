@@ -1,0 +1,61 @@
+///渠道类型 不同项目 配置不同渠道
+enum ChannelType {
+  ///android-test
+  aiAndroidTest("d555f75afa47c600", 1940),
+
+  ///ios-test
+  aiIosTest("1ba47e4fffcd4a76", 1944),
+
+  ///百度信息流
+  baiduStream('', 12),
+
+  ///快手-磁力聚星
+  kwaiMgs('', 2),
+
+  ///百度广告-投放
+  baiduLaunch('', 3),
+
+  /// 腾讯投放
+  tencentLaunch('', 14),
+
+  ///Ai金曲大师- iOS- AppStore-默认
+  iosAppStore("9581e2b163db3724", 2038),
+
+  ///_2031_Ai金曲大师_安卓华为默认
+  huawei('b22b0afb6f1a31b4', 2031),
+
+  ///_2036_Ai金曲大师_安卓百度默认
+  baidu('911ddc18859078fb', 2036),
+
+  ///_2037_Ai金曲大师_安卓应用宝默认
+  tencent('f3d7603871895c00', 2037),
+
+  ///_2034_Ai金曲大师_安卓vivo默认
+  vivo('f5057160604e9d17', 2034),
+
+  ///_2035_Ai金曲大师_安卓小米默认
+  xiaomi('72305aaa98866717', 2035),
+
+  ///_2033_Ai金曲大师_安卓OPPO默认
+  oppo('6224b7612ebd5c13', 2033),
+
+  ///_2040_Ai金曲大师_安卓快手默认
+  kwai('de9ab91aba0c4c41', 2040),
+
+  ///_2039_Ai金曲大师-安卓头条默认
+  headlines('99ce46eedf34baae', 2039),
+
+  ///_2032_Ai金曲大师安卓荣耀默认
+  huaweiHonor('b47f3d75122b82ee', 2032),
+
+  ///_1983_AI音乐安卓正式环境的测试渠道
+  aiAndroidRelease("26de2991c5e2fb41", 1983),
+
+  ///_2161_Ai金曲大师-安卓pc-正式环境
+  aiAndroidPc("dd1d3bb665e521c4", 2161);
+
+  final String channel;
+  final num code;
+
+  const ChannelType(this.channel, this.code);
+}

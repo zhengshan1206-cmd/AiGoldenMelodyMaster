@@ -1,0 +1,11 @@
+ext {
+    kotlin_version = '1.8.20'
+
+    compileSdkVer = 34
+    buildToolsVer = '34.0.0'
+    minSdkVer = 21
+    targetSdkVer = 34
+
+    appVerName = "1.0.0"
+    glide_version = "1.0.0"
+}

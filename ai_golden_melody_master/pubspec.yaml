@@ -1,0 +1,152 @@
+name: ai_golden_melody_master
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 12.0.4+250909001
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  get: 4.6.6
+  flutter_localization: ^0.2.2
+  date_format: ^2.0.7
+  intl: ^0.19.0
+  audioplayers: 5.2.1
+  shared_preferences: ^2.3.1
+  flustars_flutter3: ^3.0.0
+  common_utils: ^2.1.0
+  encrypt: ^5.0.3
+  package_info_plus: ^4.2.0
+  device_info_plus: ^10.1.2
+  tuple: ^2.0.2
+  dio: ^5.5.0+1
+  webview_flutter: ^4.8.0
+  logger: ^2.3.0
+  connectivity_plus: ^6.0.4
+  flutter_easyloading: ^3.0.5
+  image_picker: ^1.0.4
+  wechat_camera_picker: ^4.3.2
+  permission_handler: ^11.3.1
+  wechat_assets_picker: ^9.2.1
+  flutter_screenutil: ^5.9.3
+  url_launcher: ^6.3.0
+  adaptive_action_sheet: ^2.0.3
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.16
+  cached_video_player_plus: ^3.0.3
+  video_player: ^2.9.1
+  video_thumbnail: ^0.5.3
+  flick_video_player: ^0.9.0
+  image_gallery_saver: ^2.0.3
+  path_provider: ^2.1.4
+  flutter_keyboard_visibility: ^6.0.0
+  loading_indicator: ^3.1.1  #loading
+  svgaplayer_flutter: ^2.0.0
+
+
+
+  in_app_purchase: ^3.2.0
+  in_app_purchase_storekit: ^0.3.22
+  alipay_kit: ^6.0.0
+  wechat_kit: ^6.0.1
+  syncfusion_flutter_sliders: ^27.1.58
+#  fluttertoast: ^8.2.12
+  carousel_slider_plus: ^7.1.1
+  umeng_common_sdk: ^1.2.3
+  app_tracking_transparency: ^2.0.6+1
+
+  flutter_image_compress: ^2.4.0
+
+
+
+
+
+
+
+  bda_signal:
+    path: ../bda_signal
+
+  flutter_bugly: ^1.0.2
+  easy_refresh: ^3.4.0
+  easy_debounce: ^2.0.3
+  pull_to_refresh_flutter3: ^2.0.2
+  flexible_wrap: ^1.0.6
+  flutter_infinite_marquee: ^1.0.0
+  flutter_widget_from_html: ^0.14.7
+  lpinyin: ^2.0.3
+  lottie: ^3.1.3
+  another_audio_recorder: 1.2.1
+  share_plus: ^11.0.0
+  flutter_download_manager: ^0.5.5
+  fk_user_agent: ^2.1.0
+  showcaseview: ^4.0.1
+  qr_flutter: ^4.1.0
+  widgets_to_image: ^2.0.0
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+
+dependency_overrides:
+  http: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/main/
+    - assets/me/
+    - assets/purchase/
+    - assets/common/
+    - assets/login/
+    - assets/purchase/home/
+    - assets/vip/
+    - assets/ai/
+    - assets/home/
+    - assets/music_play/
+    - assets/main/guide/
+    - assets/custom_animation/
+    - assets/home/share_sales/
+    - assets/purchase/dialog/
+
+
+
+
+
+
+
+wechat_kit:
+  app_id: wx4ab3a96206e6c035
+  universal_link: beiyinhuanyue
+  ios: no_pay
+
+
+alipay_kit:
+  scheme: alipaywxe1d9879ec1c96d2b # scheme 不能为纯数字，推荐：alipay${appId}
